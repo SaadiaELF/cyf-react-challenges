@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <h1> High Score by Country</h1>
-      {allCountryScores.map((country) => (
-        <Card country={country.name} />
+      {allCountryScores.map((country, index) => (
+        <Card key={index} country={country.name} />
       ))}
     </div>
   );

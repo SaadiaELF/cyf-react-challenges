@@ -1,9 +1,11 @@
 import React from "react";
 
-const Card = (props) => {
-    return <div className="card">
+const Card = (props, key) => {
+  return (
+    <div className="card" key={key}>
       <h2>HighScores : {props.country}</h2>
-  </div>;
+    </div>
+  );
 };
 
 export default Card;
