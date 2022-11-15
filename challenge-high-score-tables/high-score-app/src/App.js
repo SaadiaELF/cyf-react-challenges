@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <div className="container">
-      <h1 className="header"> High Score by Country</h1>
+      <h1 className="heading"> High Score by Country</h1>
       {allCountryScores.map((country, index) => (
         <Card key={index} country={country.name} scores={country.scores} />
       ))}
